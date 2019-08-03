@@ -1,0 +1,17 @@
+.class {
+  background-image: 
+}
+#header {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: lightblue;
+  color: darkblack;
+  text-align: center;
+}
+#footer {
+  text-align: center;
+
+}
+#body {
+  text-align: justify;
+
+}
