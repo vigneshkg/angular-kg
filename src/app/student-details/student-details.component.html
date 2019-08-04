@@ -1,0 +1,15 @@
+<div  class = "studentDet">
+  <div *ngFor = "let stu of students">
+    <p>Student Id : {{stu.id}}</p>
+    <p>Student Name: {{stu.name}}</p>
+    <p>Student Age: {{stu.age}}</p>
+    <p>Student Specialization: {{stu.specialization}}</p>
+  </div>
+</div>
+  <!-- <input #refvar type="text"> -->
+<div>
+  <button (click)="studentDetails($event)">Complete Details</button>
+</div>
+<h5> Component Interaction using Input and Output </h5>
+<p> {{parentData}} </p>
+<button (click)="fireEvent()">Send Data</button>

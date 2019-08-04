@@ -1,0 +1,8 @@
+<div class="studentList">
+  <h3>Students List </h3>
+  <div *ngFor = "let stu of student">
+    <p> {{stu}} </p>
+  </div>
+  <app-student-details (childEvent) = "message=$event" [parentData] = "stuName"></app-student-details>
+  {{message}}
+</div>
