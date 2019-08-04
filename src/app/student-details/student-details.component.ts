@@ -12,7 +12,7 @@ export class StudentDetailsComponent implements OnInit {
   @Output() public childEvent = new EventEmitter();
 
   studentDetails() {
-    // this.students = this._studentsData.getStudents();
+    this.students = this._studentsData.getStudents();
     // console.log(this.students);
   }
   fireEvent() {
