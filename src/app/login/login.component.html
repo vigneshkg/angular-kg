@@ -1,4 +1,13 @@
-<div>
-  <h3> Username </h3><input type="username">
-  <input type="password">
+<div class="container">
+  <form>
+    <div class="user">
+      <label for="username">Username </label>
+      <input id="username" class="form-"control #myid type="username" required>
+    </div>
+    <div class="pass">
+      <label for="password">Password </label>
+      <input type="password">
+    </div>
+    <button type="submit" (click)="submitData(myid.value)">Submit</button>
+  </form>
 </div>

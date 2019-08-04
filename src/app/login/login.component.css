@@ -1,0 +1,6 @@
+.container{
+  background-color: #ccc;
+}
+.user, .pass {
+  padding: 5px
+}
