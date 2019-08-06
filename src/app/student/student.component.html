@@ -1,5 +1,8 @@
 <div class="studentList">
   <h3>Students List </h3>
+  <div>
+    <button (click)="serviceData($event)" > ServiceData </button>
+  </div>
   <div *ngFor = "let stu of student">
     <p> {{stu}} </p>
   </div>

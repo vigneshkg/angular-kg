@@ -1,7 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { StudentDataService } from '../student-data.service';
 
 @Component({
-  selector: 'app-student',
+  selector: 'student',
   templateUrl: './student.component.html',
   styleUrls: ['./student.component.css']
 })
@@ -11,8 +12,15 @@ export class StudentComponent implements OnInit {
 
   public stuName = "Ari Lerner"
   public message;
+  public urlData = [];
 
-  constructor() { }
+  serviceData() {
+    console.log("serviceData clickk in student component");
+    // this.urlData = this.httpServiceData.getData(urlData);
+  }
+
+  constructor( private httpServiceData: StudentDataService) {    
+  }
 
   ngOnInit() {
   }
