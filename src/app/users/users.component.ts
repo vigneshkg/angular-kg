@@ -13,13 +13,12 @@ export class UsersComponent implements OnInit {
   public usersData;
   searchParams = 3;
   ngOnInit() {
-    console.log("tt");
     this.httpVar.get("https://jsonplaceholder.typicode.com/users?id=" + this.searchParams).subscribe((data) => this.displayUsers(data))
   }
 
   displayUsers(usersData) {
     this.usersData = usersData;
     console.log(usersData);
-  } 
+  }
 
 }

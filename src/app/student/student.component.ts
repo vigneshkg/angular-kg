@@ -12,11 +12,13 @@ export class StudentComponent implements OnInit {
 
   public stuName = "Ari Lerner"
   public message;
-  public urlData = [];
+  public urlData ;
+  
 
   serviceData() {
-    console.log("serviceData clickk in student component");
-    // this.urlData = this.httpServiceData.getData(urlData);
+    const url = "http://www.mocky.io/v2/5d49831f3200005300600d47";
+    this.urlData = this.httpServiceData.getData(url);
+    console.log(this.urlData);
   }
 
   constructor( private httpServiceData: StudentDataService) {    

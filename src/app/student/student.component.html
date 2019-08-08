@@ -9,3 +9,6 @@
   <app-student-details (childEvent) = "message=$event" [parentData] = "stuName"></app-student-details>
   {{message}}
 </div>
+<div>
+  <p *ngFor="let urll of urlData"> {{urll.id}} </p>
+</div>

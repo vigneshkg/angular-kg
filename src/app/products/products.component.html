@@ -1,5 +1,7 @@
 <div class="products">
-  <p>Lorem ipsum :</p>
-  <!-- <img src = 'assets/img/angular_logo.png'> -->
-  <p>Nam dignissim erat vitae sem consectetur tempor. Sed non porta nisl. Vestibulum quis massa tellus. Fusce in pharetra mauris.</p>
+  <div *ngFor="let product of products" >
+    <p> Product Id : {{ product.id }} </p>
+    <p> Product Name : {{ product.name }} </p>
+    <p> Product Description : {{ product.description }} </p>
+  </div>
 </div>
