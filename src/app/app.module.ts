@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -13,7 +13,7 @@ import {AppRoutingModule} from './app.routing.module';
 import { UsersComponent } from './users/users.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule, ReactiveFormsModule ],
   declarations: [ AppComponent, StudentComponent, StudentDetailsComponent, ProductsComponent, LoginComponent, UsersComponent ],
   bootstrap:    [ AppComponent ],
   providers: [StudentDataService]

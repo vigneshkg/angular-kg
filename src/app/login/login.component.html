@@ -1,13 +1,14 @@
 <div class="container">
-  <form>
+  <form formGroup = "loginForm">
     <div class="user">
       <label for="username">Username </label>
-      <input id="username" class="form-"control #myid type="username" required>
+      <input id="username" formControlName="userName"  #myid type="username" required>
     </div>
     <div class="pass">
       <label for="password">Password </label>
-      <input type="password">
+      <input type="password" formControlName="password">
     </div>
     <button type="submit" (click)="submitData(myid.value)">Submit</button>
+    <p> {{userName.value}} </p>
   </form>
 </div>
