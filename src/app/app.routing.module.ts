@@ -10,11 +10,9 @@ const routes: Routes = [
    { path: 'products', component: ProductsComponent },
    { path: 'users', component: UsersComponent },
    { path: 'student', component: StudentComponent },
-   { path: '**', redirectTo: '' },
-  //  { path: 'customers', 
-  //  loadChildren(): => import('./customers/customers.module').then(mod => mod.CustomersModule) },
-  //  { path: 'orders', 
-  //  loadChildren(): => import('./orders/orders.module').then( mod => mod.OrdersModule) }
+   { path: 'customers', loadChildren: './customers/customers.module#CustomersModule' },
+   { path: 'orders', loadChildren: './orders/orders.module#OrdersModule' },
+   { path: '**', redirectTo: '' }
 ]
 
 @NgModule({
