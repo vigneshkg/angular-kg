@@ -11,10 +11,12 @@ import { ProductsComponent } from './products/products.component';
 import { LoginComponent } from './login/login.component';
 import {AppRoutingModule} from './app.routing.module';
 import { UsersComponent } from './users/users.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule, ReactiveFormsModule ],
-  declarations: [ AppComponent, StudentComponent, StudentDetailsComponent, ProductsComponent, LoginComponent, UsersComponent ],
+
+  declarations: [ AppComponent, StudentComponent, StudentDetailsComponent, ProductsComponent, LoginComponent, UsersComponent, HighlightDirective ],
   bootstrap:    [ AppComponent ],
   providers: [StudentDataService]
 })
