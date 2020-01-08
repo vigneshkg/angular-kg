@@ -1,0 +1,136 @@
+.bodyContent {
+  background-color: rgb(229, 246, 247);
+  height: 100%;
+  padding: 0px 0px 0 64px;
+}
+
+body.open .bodyContent {
+  padding: 0px 0px 0 170px;
+}
+
+body.open .sidebar {
+  width: 170px;
+}
+
+////  header with navBar, buttons
+.topButtons {
+  padding: 8px;
+}
+
+/// horizontal nav tab component
+.navTab {
+  height: 100px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+/// progress-bar component
+.progress {
+  width: 350px;
+}
+
+.bar {
+  background: #343a40!important;
+  color: #ddd;
+  height: 60px;
+}
+
+// box component
+.example-small-box {
+  text-align: center;
+  float: left;
+  height: 100px;
+  width: 10%;
+  padding: 10px;
+  background-color: white;
+  margin: 1px;
+}
+
+/// basic-info card component
+.basicInfo {
+  text-align: center;
+  float: left;
+  height: 75px;
+  width: 75%;
+  padding: 10px;
+  background-color: white;
+}
+
+.rel {
+  position: relative;
+}
+
+.searchBar i.fa-search {
+  position: absolute;
+  left: 10px
+}
+
+.fwhite {
+  color: #ffffff !important;
+}
+
+.list-inline {
+  margin: 0;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.list-inline li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.noPadding {
+  padding: 0 !important;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.navtwo {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.navtwo .navbar {
+  background: rgb(229, 246, 247) !important;
+}
+
+.document {
+  border: 1px solid #cdcdcd;
+}
+
+.document tr, .document td, .document th {
+  padding: 2px 10px !important;
+}
+
+.boxed .card, .boxed ul.list-group {
+  min-height: 114px;
+}
+
+.nav-link.active {
+  background-color: transparent !important;
+  color: #333333 !important;
+  border-bottom: 4px solid #007bff;
+  border-radius: 0px !important;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  background: #ffffff;
+}
+
+.sidebar li {
+  padding: 5px 10px;
+}
+
+.hamburger {
+  background: #343a40 !important;
+  border: 0;
+  height: 56px;
+}
