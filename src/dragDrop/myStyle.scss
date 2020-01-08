@@ -1,0 +1,54 @@
+.bodyContent {
+  background-color: rgb(229, 246, 247);
+}
+
+////  header with navBar, buttons
+.topButtons {
+  padding: 8px;
+}
+
+/// horizontal nav tab component
+.navTab {
+  height: 100px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+/// progress-bar component
+.progress {
+  width: 350px;
+}
+.outer {
+  float: left;
+  height: 100px;
+  width: 30%;
+  padding: 10px;
+  background-color: white;
+}
+.bar {
+  background: #343a40!important;
+  color: #ddd;
+  height: 60px;
+}
+
+// box component 
+.example-small-box {
+  text-align: center;
+  float: left;
+  height: 100px;
+  width: 10%;
+  padding: 10px;
+  background-color: white;
+  margin: 1px;
+}
+
+/// basic-info card component
+.basicInfo {
+  text-align: center;
+  float: left;
+  height: 75px;
+  width: 75%;
+  padding: 10px;
+  background-color: white;
+}

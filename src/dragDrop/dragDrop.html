@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <div> <!-- bootstrap, css, js external imports -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/scss" href="myStyle.scss">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script src="myScript.js"></script>
+    </div>
+  </head>
+
+  <body>
+    <div  class = "bodyContent">
+      <div class = "header"> <!-- header with navBar, buttons  -->
+        <div class = "navBar">
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">Logo</a>
+          
+            <!-- Links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+              </li>
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Choose Project
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class = "topButtons">
+          <button type="button" class="btn btn-secondary">Cancel</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+        </div>
+  
+      <div class = "body">
+        <div> <!-- /// box component  -->
+          <div class = "box" >
+            <div class="example-small-box ">
+              <h4>18</h4>
+              <p>Indents</p>
+            </div>
+            <div class="example-small-box">
+              <h4>256</h4>
+              <p>Entities</p>
+            </div>
+            <div class="example-small-box ">
+              <h4>12</h4>
+              <p>Documents</p>
+            </div>
+            <div class="example-small-box ">
+              <h4>232</h4>
+              <p>Sentences Identified</p>
+            </div>
+          </div>
+        </div> <br> <br>
+  
+        <div> <!-- /// progress-bar component  -->
+          <div class = "outer">
+            <div class="progress">
+              <div class="progress-bar bg-danger" style="width:25%">
+              </div>
+              <div class="progress-bar bg-warning" style="width:25%">
+              </div>
+              <div class="progress-bar bg-success" style="width:25%">
+              </div>
+              <div class="progress-bar bg-info" style="width:25%">
+              </div>
+            </div>
+            <div>
+              <label >
+                <input type="checkbox" id="check2" > Unassigned
+              </label>
+              <label >
+                <input type="checkbox" id="check2" > Assigned
+              </label>
+              <label >
+                <input type="checkbox" id="check2" > Tagged
+              </label>
+              <label >
+                <input type="checkbox" id="check2" > Trained
+              </label>
+            </div>
+          </div >
+        </div>
+  
+        <div>  <!-- /// table component  -->
+          <div class="container">         
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th>Assignee</th>
+                  <th>Docs</th>
+                  <th>Sentences</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>6</td>
+                  <td>138</td>
+                </tr>
+                <tr>
+                  <td>Michelle R</td>
+                  <td>4</td>
+                  <td>74</td>
+                </tr>
+                <tr>
+                  <td>Greg Stevert</td>
+                  <td>2</td>
+                  <td>20</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+  
+        <div>   <!-- /// horizontal nav tab component  -->
+          <div class = "navTab">
+            <mat-tab-group>
+              <mat-tab label="Indents"> </mat-tab>
+              <mat-tab label="documents"> </mat-tab>
+              <mat-tab label="statistics"> </mat-tab>
+            </mat-tab-group>
+          </div>
+        </div>
+  
+        <div>  <!-- /// basic-info card component  -->
+          <div class = "outer" >
+            <div class="model1">
+              <h4>18</h4>
+              <p>Indents</p>
+            </div>
+            <div class="model2">
+              <h4>256</h4>
+              <p>Entities</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      
+      <div class = "footer">
+  
+      </div>
+            
+    </div>
+
+  </body>
+</html>
