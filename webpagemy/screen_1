@@ -1,0 +1,316 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="myScript.js"></script>  
+  </head>
+
+  <body class="">
+    <div class="bodyContent">
+      <div class="header"> <!-- header with navBar, buttons  -->
+        <nav class="navbar navbar-light bg-dark navbar-dark navHeight">
+          <a class="navbar-brand"></a>
+          <form class="form-inline float-right rel searchBar">
+            <input class="form-control mr-sm-2 colorbar" type="search" aria-label="Search">
+            <i class="fa fa-search fwhite"></i>
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle colorbar" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Choose Project
+              </a>
+
+              <div class="dropdown-menu colorDrop" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+            <ul class="list-inline">
+              <li class="nav-item">
+                <i class="fa fa-bell fwhite"></i>
+              </li>
+              <li class="nav-item">
+                <i class="fa fa-user-circle fwhite"></i>
+              </li>
+            </ul>
+
+
+          </form>
+        </nav>
+        <nav class="row navtwo">
+          <div class="navbar navbar-light bg-light justify-content-start col-lg-4">
+            <span class="arrow"><i class="fa fa-arrow-left arrowPd"></i><p class="row">Vendor Contracts <b> &gt; </b> Fixed Price Contracts - English</p>
+            </span>
+          </div>
+          <div class="navbar navbar-light bg-light justify-content-end col-lg-2">
+            <span class="badge badge-pill assigned">Assigned</span>
+          </div>
+          <div class="navbar navbar-light bg-light justify-content-end col-lg-6">
+            <button type="button" class="btn btn-secondary mr10">Cancel</button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </nav>
+
+      </div>
+      <div class="boxed">
+        <div class="content-container">
+          <div class="mt-3">
+            <div class="row">
+              <div class="col-sm">
+                <ul class="list-group list-group-horizontal-md txtCenter">
+                  <li class="list-group-item lnkColor"><h4>18</h4><h6>Intents</h6></li>
+                  <li class="list-group-item"><h4>256</h4><h6>Entities</h6></li>
+                  <li class="list-group-item"><h4>12</h4><h6>Documents</h6></li>
+                  <li class="list-group-item"><h4>232</h4><h6>Sentences</h6></li>
+                </ul>
+              </div>
+              <div class="col-sm">
+                <div class="card"> <!-- /// progress-bar component  -->
+                  <div class="card-body">
+                    <div class="progress mb-2">
+                      <div class="progress-bar bg-danger" style="width:25%">
+                      </div>
+                      <div class="progress-bar bg-warning" style="width:25%">
+                      </div>
+                      <div class="progress-bar bg-success" style="width:25%">
+                      </div>
+                      <div class="progress-bar bg-info" style="width:25%">
+                      </div>
+                    </div>
+                    <div class="custom-control mb-3">
+                      <!-- <label>
+                        <input type="checkbox" id="check2"> Unassigned
+                      </label> -->
+                      <span class="checkPd">
+                        <input type="checkbox" class="custom-control-input" id="unassigned" checked>
+                        <label class="custom-control-label" for="unassigned">Unassigned</label>
+                      </span>
+                      <span class="checkPd">
+                        <input type="checkbox" class="custom-control-input" id="assigned" checked>
+                        <label class="custom-control-label" for="assigned">Assigned</label>
+                      </span>
+                      <span class="checkPd">
+                        <input type="checkbox" class="custom-control-input" id="tagged" checked>
+                        <label class="custom-control-label" for="tagged">Tagged</label>
+                      </span>
+                       <span>
+                        <input type="checkbox" class="custom-control-input" id="trained" checked>
+                        <label class="custom-control-label" for="trained">Trained</label>
+                      </span>
+                      <!-- <label>
+                        <input type="checkbox" id="check2"> Assigned
+                      </label>
+                      <label>
+                        <input type="checkbox" id="check2"> Tagged
+                      </label>
+                      <label>
+                        <input type="checkbox" id="check2"> Trained
+                      </label> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <table class="table table-borderless document bg-white tableHeight">
+                  <thead>
+                    <tr>
+                      <th scope="col">Assignee</th>
+                      <th scope="col">Docs</th>
+                      <th scope="col">Sentences</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>John Doe</td>
+                      <td>6</td>
+                      <td>138</td>
+                    </tr>
+                    <tr>
+                      <td>Michelle R</td>
+                      <td>4</td>
+                      <td>74</td>
+                    </tr>
+                    <tr>
+                      <td>Greg Stevert</td>
+                      <td>2</td>
+                      <td>20</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-sm">
+              <ul class="nav nav-pills bg-white">
+                <li class="nav-item ml-2">
+                  <a class="nav-link active text-dark" data-toggle="tab" href="#home">INTENTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" data-toggle="tab" href="#menu1">DOCUMENTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" data-toggle="tab" href="#menu2">STATISTICS</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div id="home" class="container tab-pane active"><br>
+
+                  <h5 class="mr15">Basic Information</h5>
+                  <div class="row">
+                    <div class="col col-lg-12">
+                      <div class="card">
+                        <div class="card-body row">
+                          <div class="card col-lg mr-3 colorCard">
+                            <div class="card-body">
+                          <h6>Model Name </h6>
+                          <h4> Sample Model Name</h4>
+                        </div>
+                          </div>
+                          <div class="card col-lg colorCard">
+                            <div class="card-body">
+                        <h6>Model Description</h6>
+                        <h4>Point of Sale data</h4>
+                      </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <h5 class="mr15">Parameters</h5>
+                  <div class="row">
+                    <div class="col col-lg-12">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                            <label>
+                              <input type="checkbox" id="check1"> Auto - Suggest <i> Convolutional Neural Network </i> (CNN) Parameters
+                            </label>
+                            <label>
+                              <input type="checkbox" id="check2"> Append Section Header
+                            </label>
+                          </div>
+                          <div class="row"> 
+                            <div class="card col-lg mr-3 colorCard">
+                              <div class="card-body">
+                                <p>Input Layer Dimnension</p>
+                                <h5>200</h5>
+                              </div>
+                            </div>
+                            <div class="card col-lg colorCard mr-3">
+                              <div class="card-body">
+                                <p>Validation to Train Ratio (%)</p>
+                                <h5> 48</h5>
+                              </div>
+                            </div>
+                            <div class="card col-lg mr-3 colorCard">
+                              <div class="card-body">
+                                <p>Miscellaneous Ratio (%)</p>
+                                <h5> 12</h5>
+                              </div>
+                            </div>
+                            <div class="card col-lg mr-3 colorCard">
+                              <div class="card-body">
+                                <p>Learning Rate</p>
+                                <h5> 36</h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-4">
+                            <div class="card col-lg mr-3 colorCard">
+                            <div class="card-body">
+                              <p>Activation Function</p>
+                              <h5> 36</h5>
+                            </div>
+                            </div>
+                            <div class="card col-lg colorCard mr-3">
+                              <div class="card-body">
+                                <p>Model Type</p>
+                                <h5> 36</h5>
+                              </div>
+                            </div>
+                            <div class="card col-lg mr-3 colorCard">
+                              <div class="card-body">
+                                <p>Epocha</p>
+                                <h5> 36</h5>
+                              </div>
+                            </div>
+                            <div class="card col-lg mr-3 colorCard">
+                              <div class="card-body">
+                                <p>Embedding Dimension</p>
+                                <h5> 36</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="menu1" class="container tab-pane fade"><br>
+                  <h3>Documents</h3>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div id="menu2" class="container tab-pane fade"><br>
+                  <h3>Statistics</h3>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+        <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+          <li class="nav-item active hamburger">
+            <a class="nav-link bars" href="#"><i class="fa fa-bars fwhite"></i></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link bars"><i class="fas fa-chart-bar"></i><p id='navIconData' style="display: none;padding: 5px;"> Data</p></a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link bars"><i class="fas fa-trash"></i><p id='navIconTrash' style="display: none;padding: 5px;"> Trash</p></a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link bars"><i class="fas fa-info-circle"></i><p id='navIconInfo' style="display: none;padding: 5px;"> Info</p></a>
+          <!-- </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-collapse" href="#" id="hasSubItems" data-toggle="collapse" data-target="#collapseSubItems4" aria-controls="collapseSubItems4" aria-expanded="false">Item 4</a>
+            <ul class="nav-second-level collapse" id="collapseSubItems4" data-parent="#navAccordion">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span class="nav-link-text">Item 4.1</span>
+                </a>
+              </li>
+            </ul>
+          </li> -->
+          <li class="nav-item active">
+            <a class="nav-link"><i class="fas fa-comments"></i><p id='navIconChat' style="display: none;padding: 5px;"> Chat</p></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"><i class="fas fa-flag"></i><p id='navIconFlag' style="display: none;padding: 5px;"> Flag</p></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"><i class="fas fa-tag"></i><p id='navIconTags' style="display: none;padding: 5px;"> Tags</p></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"><i class="fas fa-shopping-cart"></i><p id='navIconCart' style="display: none;padding: 5px;"> Cart</p></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"><i class="fas fa-user-friends"></i><p id='navIconAccount' style="display: none;padding: 5px;"> Account</p></a>
+          </li>
+        </ul>
+      </div>
+
+  </body>
+</html>
+
