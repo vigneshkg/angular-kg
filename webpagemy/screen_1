@@ -314,3 +314,220 @@
   </body>
 </html>
 
+
+
+
+
+
+
+.hiddenNav{
+  display: inline ! important;
+}
+
+.bodyContent {
+  background-color: rgb(218, 253, 255);
+  height: 100%;
+  padding: 0px 0px 0 40px;
+}
+
+body.open .bodyContent {
+  padding: 0px 0px 0 115px;
+}
+
+body.open .sidebar {
+  width: 115px;
+}
+
+.topButtons {
+  padding: 8px;
+}
+
+.navTab {
+  height: 100px;
+  padding: 10px;
+  background-color: white;
+}
+
+.bar {
+  background: #343a40!important;
+  color: #ddd;
+  height: 60px;
+}
+
+.example-small-box {
+  text-align: center;
+  float: left;
+  height: 100px;
+  width: 10%;
+  padding: 10px;
+  background-color: white;
+  margin: 1px;
+}
+
+.basicInfo {
+  text-align: center;
+  float: left;
+  height: 75px;
+  width: 75%;
+  padding: 10px;
+  background-color: white;
+}
+
+.rel {
+  position: relative;
+}
+
+.searchBar i.fa-search {
+  position: absolute;
+  left: 10px
+}
+
+.fwhite {
+  color: #ffffff !important;
+}
+
+.list-inline {
+  margin: 0;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+.mr15 {
+  margin-left: 15px;
+}
+
+.list-inline li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.noPadding {
+  padding: 0 !important;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.navtwo {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.navtwo .navbar {
+  background-color: rgb(218, 253, 255) !important;
+}
+
+.document {
+  border: 1px solid #cdcdcd;
+}
+
+.document tr, .document td, .document th {
+  padding: 2px 10px !important;
+}
+
+.boxed .card, .boxed ul.list-group {
+  min-height: 114px;
+}
+
+.nav-link.active {
+  background-color: transparent !important;
+  color: #333333 !important;
+  border-bottom: 4px solid #007bff;
+  border-radius: 0px !important;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  background: #ffffff;
+}
+
+.sidebar li {
+  padding: 5px 10px;
+}
+
+.hamburger {
+  background: #343a40 !important;
+  border: 0;
+  height: 56px;
+}
+
+.arrow {
+  display: inline-flex;
+}
+
+.arrowPd {
+  padding: 0px 10px 0px 0px;
+  margin-top: 6px;
+}
+
+.assigned {
+  background: rgb(162, 246, 252);
+  padding: 9px !important;
+}
+
+.txtCenter {
+  text-align: center;
+}
+
+.boxed .row li h4 {
+  color: rgb(65, 196, 206);
+}
+
+.colorbar {
+  background: #393a3b !important;
+  color: #e5e5e5 !important;
+}
+
+.colorDrop {
+  background-color: #a3a2a2 !important;
+  border-radius: 8px !important;
+}
+
+.colorCard {
+  background:#e5e5e5 !important;
+  border-bottom: 4px solid #cdcdcd !important;
+}
+
+.navHeight {
+  height: 56px;
+}
+
+.tableHeight {
+  min-height: 112px;
+}
+
+.card .row label {
+  margin-right: 49px;;
+}
+
+.checkPd {
+  padding-right: 23px;
+}
+
+.card span input #tagged {
+  background-color: red !important;
+}
+
+
+
+
+
+$(document).ready(function(){
+  $('.hiddenNav').hide();
+  $('.hamburger').on('click', function(){
+    $("body").toggleClass('open');
+    $('#navIconData').toggleClass('hiddenNav');
+    $('#navIconTrash').toggleClass('hiddenNav');
+    $('#navIconInfo').toggleClass('hiddenNav');
+    $('#navIconChat').toggleClass('hiddenNav');
+    $('#navIconFlag').toggleClass('hiddenNav');
+    $('#navIconTags').toggleClass('hiddenNav');
+    $('#navIconCart').toggleClass('hiddenNav');
+    $('#navIconAccount').toggleClass('hiddenNav');    
+  });
+});
+
+
